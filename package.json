@@ -1,0 +1,22 @@
+{
+  "name": "get-env-param",
+  "version": "0.1.1",
+  "description": "Get environment param with defaults",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/garipov/get-env-param.git"
+  },
+  "keywords": [
+    "nodejs",
+    "env",
+    "environment"
+  ],
+  "author": "Ramil Garipov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/garipov/get-env-param/issues"
+  },
+  "homepage": "https://github.com/garipov/get-env-param#readme"
+}
