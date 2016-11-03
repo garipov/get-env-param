@@ -1,6 +1,6 @@
 {
   "name": "get-env-param",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Get environment param with defaults",
   "main": "index.js",
   "scripts": {},

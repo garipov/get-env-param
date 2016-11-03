@@ -12,21 +12,15 @@ module.exports.PREFIX = '';
  */
 function getParam(param, defaultValue) {
   var params = [].concat(param);
-
-  var prefix = module.exports.PREFIX;
+  var prefixes = [].concat(module.exports.PREFIX);
 
   for (var i = 0, key; i <= params.length; i++) {
-    key = params[i];
-
-    if (prefix) {
-      if (process.env.hasOwnProperty(prefix + key)) {
-        return process.env[prefix + key];
+    for (var j = 0; j <= prefixes.length; j++) {
+      var key = prefixes[j] + params[i];
+      if (process.env.hasOwnProperty(key)) {
+        return process.env[key];
       }
-    }
-
-    if (process.env.hasOwnProperty(key)) {
-      return process.env[key];
-    }
+	}
   }
 
   return defaultValue;
